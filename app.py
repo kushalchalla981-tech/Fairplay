@@ -10,7 +10,7 @@ from utils.visualization import (
 )
 from utils.mitigation import BiasMitigator
 from utils.report_generator import ComplianceReportGenerator
-import plotly.streamlit as st_plotly
+
 
 st.set_page_config(
     page_title="AI Fairness Dashboard",
@@ -103,7 +103,7 @@ def show_metrics_results(metrics: dict, df: pd.DataFrame, sensitive_col: str, ta
     st.markdown("#### 📈 Visual Analysis")
     try:
         chart = create_fairness_bar_chart(df, sensitive_col, target_col, metrics)
-        st_plotly(chart, use_container_width=True)
+        st.plotly_chart(chart, use_container_width=True)
         st.session_state.chart = chart
     except Exception as e:
         st.warning(f"Chart temporarily unavailable: {str(e)}")
@@ -111,7 +111,7 @@ def show_metrics_results(metrics: dict, df: pd.DataFrame, sensitive_col: str, ta
     with st.expander("📊 View Summary Charts"):
         try:
             summary_chart = create_summary_metrics_chart(metrics)
-            st_plotly(summary_chart, use_container_width=True)
+            st.plotly_chart(summary_chart, use_container_width=True)
         except Exception as e:
             st.warning(f"Summary chart unavailable: {str(e)}")
 
@@ -192,7 +192,7 @@ def show_comparison_results(
         chart = create_comparison_chart(
             df_original, df_mitigated, sensitive_col, target_col
         )
-        st_plotly(chart, use_container_width=True)
+        st.plotly_chart(chart, use_container_width=True)
     except Exception as e:
         st.warning(f"Comparison chart unavailable: {str(e)}")
     
