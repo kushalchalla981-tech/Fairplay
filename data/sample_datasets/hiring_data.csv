@@ -1,0 +1,301 @@
+candidate_id,gender,age_group,education,experience_years,ethnicity,hired
+CAND_0001,Female,36-45,Bachelor,3,Black,0
+CAND_0002,Other,36-45,High School,14,Black,0
+CAND_0003,Female,26-35,Master,5,Black,1
+CAND_0004,Male,18-25,Master,16,White,1
+CAND_0005,Female,26-35,Master,5,Other,0
+CAND_0006,Female,18-25,Master,18,Asian,0
+CAND_0007,Female,46-55,Master,1,White,1
+CAND_0008,Male,36-45,Bachelor,14,Asian,0
+CAND_0009,Male,46-55,High School,10,Black,1
+CAND_0010,Female,18-25,Master,7,Asian,1
+CAND_0011,Female,18-25,Master,18,Asian,0
+CAND_0012,Male,46-55,PhD,12,Black,0
+CAND_0013,Female,18-25,Bachelor,11,White,0
+CAND_0014,Male,46-55,Bachelor,4,White,1
+CAND_0015,Female,36-45,Master,5,Black,0
+CAND_0016,Female,46-55,Bachelor,3,Hispanic,0
+CAND_0017,Other,36-45,PhD,18,White,1
+CAND_0018,Female,46-55,Master,19,White,0
+CAND_0019,Male,18-25,Bachelor,0,Asian,1
+CAND_0020,Female,46-55,Master,19,Other,1
+CAND_0021,Male,18-25,Master,16,Black,1
+CAND_0022,Male,46-55,High School,11,White,0
+CAND_0023,Female,46-55,PhD,14,White,0
+CAND_0024,Other,26-35,Bachelor,0,White,0
+CAND_0025,Male,18-25,Master,13,Other,1
+CAND_0026,Male,26-35,Bachelor,5,White,0
+CAND_0027,Other,18-25,Master,4,Black,1
+CAND_0028,Other,26-35,Bachelor,10,White,0
+CAND_0029,Female,36-45,High School,3,Black,0
+CAND_0030,Female,46-55,PhD,12,Hispanic,0
+CAND_0031,Male,18-25,High School,10,Asian,0
+CAND_0032,Female,18-25,Bachelor,2,White,0
+CAND_0033,Male,46-55,PhD,0,White,0
+CAND_0034,Male,18-25,PhD,5,White,1
+CAND_0035,Female,18-25,Bachelor,17,Other,1
+CAND_0036,Male,26-35,Master,9,Asian,0
+CAND_0037,Male,18-25,Bachelor,4,Black,0
+CAND_0038,Male,36-45,Bachelor,9,Hispanic,0
+CAND_0039,Male,36-45,Bachelor,11,Hispanic,1
+CAND_0040,Male,46-55,Master,1,White,1
+CAND_0041,Male,18-25,Master,12,Other,1
+CAND_0042,Male,46-55,Master,7,Black,0
+CAND_0043,Other,36-45,Master,1,White,1
+CAND_0044,Male,18-25,High School,19,Black,1
+CAND_0045,Male,18-25,Bachelor,0,White,1
+CAND_0046,Male,46-55,High School,4,White,1
+CAND_0047,Female,36-45,Bachelor,8,Hispanic,0
+CAND_0048,Female,18-25,Bachelor,16,White,1
+CAND_0049,Male,46-55,Master,8,Hispanic,0
+CAND_0050,Female,36-45,Bachelor,10,White,1
+CAND_0051,Female,46-55,High School,14,White,0
+CAND_0052,Male,26-35,High School,5,White,1
+CAND_0053,Female,18-25,Master,2,White,1
+CAND_0054,Male,26-35,Master,16,Hispanic,1
+CAND_0055,Other,36-45,High School,4,White,1
+CAND_0056,Other,26-35,High School,11,Black,0
+CAND_0057,Male,26-35,Master,17,Black,1
+CAND_0058,Male,36-45,High School,13,Hispanic,0
+CAND_0059,Female,46-55,Master,10,Other,0
+CAND_0060,Male,26-35,Master,8,Hispanic,0
+CAND_0061,Female,46-55,High School,1,White,1
+CAND_0062,Male,26-35,High School,11,White,1
+CAND_0063,Male,46-55,PhD,2,White,1
+CAND_0064,Female,36-45,Bachelor,2,Black,1
+CAND_0065,Female,26-35,Bachelor,0,White,0
+CAND_0066,Male,36-45,Master,7,Black,1
+CAND_0067,Male,26-35,PhD,7,Black,1
+CAND_0068,Other,36-45,PhD,10,White,1
+CAND_0069,Male,36-45,Master,8,Asian,0
+CAND_0070,Female,26-35,Bachelor,4,White,0
+CAND_0071,Male,26-35,High School,13,White,1
+CAND_0072,Male,26-35,Master,2,Hispanic,1
+CAND_0073,Female,18-25,Bachelor,4,Black,0
+CAND_0074,Female,46-55,Bachelor,4,Hispanic,1
+CAND_0075,Male,18-25,PhD,18,Black,1
+CAND_0076,Other,18-25,High School,13,White,1
+CAND_0077,Male,36-45,Bachelor,3,Asian,1
+CAND_0078,Male,26-35,High School,12,Asian,1
+CAND_0079,Male,46-55,Bachelor,9,Hispanic,1
+CAND_0080,Other,36-45,High School,17,White,1
+CAND_0081,Female,18-25,High School,7,Black,0
+CAND_0082,Female,26-35,High School,7,White,0
+CAND_0083,Male,36-45,Master,6,White,1
+CAND_0084,Male,26-35,Master,7,Other,1
+CAND_0085,Male,36-45,Bachelor,13,White,1
+CAND_0086,Male,26-35,PhD,18,Other,1
+CAND_0087,Male,18-25,Bachelor,5,Black,0
+CAND_0088,Male,46-55,Bachelor,0,White,1
+CAND_0089,Male,18-25,Master,14,Black,0
+CAND_0090,Male,46-55,Bachelor,0,Asian,1
+CAND_0091,Female,26-35,PhD,16,Hispanic,0
+CAND_0092,Male,36-45,High School,0,Asian,0
+CAND_0093,Male,18-25,PhD,14,Hispanic,0
+CAND_0094,Female,46-55,High School,1,Hispanic,0
+CAND_0095,Male,18-25,Master,13,Asian,0
+CAND_0096,Male,46-55,Bachelor,7,White,1
+CAND_0097,Female,18-25,PhD,7,Black,0
+CAND_0098,Male,46-55,High School,18,White,1
+CAND_0099,Other,46-55,Bachelor,6,Other,0
+CAND_0100,Male,26-35,PhD,18,Other,1
+CAND_0101,Female,46-55,Bachelor,5,White,0
+CAND_0102,Male,26-35,Master,5,Hispanic,1
+CAND_0103,Male,46-55,Master,2,Other,0
+CAND_0104,Female,36-45,Bachelor,6,White,0
+CAND_0105,Other,36-45,Master,18,Black,0
+CAND_0106,Female,36-45,Bachelor,7,Other,1
+CAND_0107,Male,46-55,PhD,9,White,1
+CAND_0108,Male,26-35,High School,19,Hispanic,1
+CAND_0109,Female,26-35,Bachelor,14,White,1
+CAND_0110,Male,46-55,PhD,14,Other,0
+CAND_0111,Male,36-45,Master,0,Other,1
+CAND_0112,Other,36-45,Bachelor,19,Other,0
+CAND_0113,Male,26-35,Master,6,Black,1
+CAND_0114,Female,36-45,Bachelor,3,Asian,1
+CAND_0115,Female,18-25,High School,5,Asian,0
+CAND_0116,Male,26-35,Bachelor,0,White,1
+CAND_0117,Male,36-45,Bachelor,4,Asian,1
+CAND_0118,Other,26-35,Bachelor,0,White,1
+CAND_0119,Female,18-25,High School,3,Black,0
+CAND_0120,Female,26-35,PhD,1,White,1
+CAND_0121,Male,26-35,PhD,9,White,0
+CAND_0122,Female,26-35,Master,4,White,0
+CAND_0123,Female,26-35,Bachelor,9,Hispanic,0
+CAND_0124,Female,18-25,Bachelor,0,White,1
+CAND_0125,Male,46-55,Master,5,Hispanic,0
+CAND_0126,Other,26-35,Master,12,White,1
+CAND_0127,Male,26-35,High School,14,White,1
+CAND_0128,Male,36-45,PhD,3,Black,1
+CAND_0129,Female,26-35,Master,12,Asian,0
+CAND_0130,Other,36-45,PhD,19,White,0
+CAND_0131,Male,46-55,Master,14,Hispanic,0
+CAND_0132,Male,18-25,Master,7,Asian,0
+CAND_0133,Female,18-25,Bachelor,4,Hispanic,0
+CAND_0134,Male,46-55,PhD,14,White,1
+CAND_0135,Other,18-25,Master,3,White,1
+CAND_0136,Other,46-55,High School,11,Asian,0
+CAND_0137,Female,46-55,High School,12,White,1
+CAND_0138,Female,46-55,Bachelor,1,Asian,0
+CAND_0139,Female,18-25,Master,18,Black,0
+CAND_0140,Male,36-45,PhD,18,Other,1
+CAND_0141,Male,46-55,High School,3,Asian,0
+CAND_0142,Male,26-35,Bachelor,3,Other,1
+CAND_0143,Female,18-25,Bachelor,10,White,0
+CAND_0144,Male,46-55,PhD,4,Asian,0
+CAND_0145,Female,46-55,Master,19,Black,0
+CAND_0146,Other,26-35,Master,10,Black,1
+CAND_0147,Male,36-45,Bachelor,9,Hispanic,0
+CAND_0148,Male,36-45,Bachelor,7,Asian,0
+CAND_0149,Male,36-45,Bachelor,5,Other,1
+CAND_0150,Male,46-55,High School,5,Asian,0
+CAND_0151,Other,46-55,Master,7,Black,0
+CAND_0152,Male,46-55,Master,14,Black,0
+CAND_0153,Female,18-25,PhD,13,Hispanic,1
+CAND_0154,Female,26-35,PhD,10,White,0
+CAND_0155,Other,46-55,Bachelor,11,White,0
+CAND_0156,Female,26-35,Master,12,White,1
+CAND_0157,Female,26-35,PhD,7,White,1
+CAND_0158,Male,36-45,Master,17,White,0
+CAND_0159,Female,18-25,Bachelor,0,White,1
+CAND_0160,Male,46-55,Bachelor,14,White,0
+CAND_0161,Female,36-45,High School,7,White,0
+CAND_0162,Female,36-45,PhD,10,Other,1
+CAND_0163,Male,46-55,Master,11,Black,0
+CAND_0164,Male,26-35,Bachelor,11,White,1
+CAND_0165,Male,36-45,Master,3,Hispanic,1
+CAND_0166,Male,26-35,Master,15,White,1
+CAND_0167,Other,18-25,Bachelor,3,Other,1
+CAND_0168,Other,26-35,High School,4,Asian,1
+CAND_0169,Female,18-25,Master,4,White,1
+CAND_0170,Male,26-35,Bachelor,7,Black,0
+CAND_0171,Male,36-45,Master,9,Asian,1
+CAND_0172,Female,36-45,Bachelor,16,Other,0
+CAND_0173,Female,18-25,Master,8,Black,0
+CAND_0174,Male,46-55,Bachelor,18,Hispanic,0
+CAND_0175,Male,18-25,Bachelor,13,White,1
+CAND_0176,Female,18-25,Master,7,Other,0
+CAND_0177,Male,26-35,Bachelor,8,White,1
+CAND_0178,Male,26-35,High School,10,Other,1
+CAND_0179,Other,18-25,High School,0,Hispanic,1
+CAND_0180,Male,36-45,Master,13,Hispanic,1
+CAND_0181,Female,26-35,Master,4,Black,0
+CAND_0182,Male,46-55,Master,13,White,1
+CAND_0183,Other,26-35,Bachelor,3,White,0
+CAND_0184,Other,26-35,High School,0,White,1
+CAND_0185,Male,46-55,High School,18,White,1
+CAND_0186,Other,18-25,Bachelor,7,Asian,1
+CAND_0187,Other,46-55,Bachelor,14,White,0
+CAND_0188,Female,18-25,Bachelor,14,White,1
+CAND_0189,Male,18-25,Bachelor,8,Other,1
+CAND_0190,Male,18-25,PhD,8,Asian,1
+CAND_0191,Male,46-55,Bachelor,9,Other,0
+CAND_0192,Female,18-25,Bachelor,19,Other,0
+CAND_0193,Female,36-45,Master,8,White,0
+CAND_0194,Female,46-55,Bachelor,2,White,0
+CAND_0195,Female,36-45,Master,19,Asian,0
+CAND_0196,Male,18-25,Master,10,Hispanic,0
+CAND_0197,Other,26-35,PhD,5,White,0
+CAND_0198,Other,18-25,High School,1,Asian,1
+CAND_0199,Male,36-45,PhD,6,White,1
+CAND_0200,Female,36-45,Bachelor,17,White,1
+CAND_0201,Male,46-55,Bachelor,1,Black,1
+CAND_0202,Male,26-35,Bachelor,16,Black,0
+CAND_0203,Male,46-55,PhD,10,Black,0
+CAND_0204,Female,36-45,Bachelor,11,White,1
+CAND_0205,Female,18-25,Bachelor,18,Asian,1
+CAND_0206,Female,26-35,Master,6,White,0
+CAND_0207,Other,18-25,Bachelor,19,White,0
+CAND_0208,Male,18-25,High School,5,Asian,1
+CAND_0209,Male,26-35,High School,0,Other,1
+CAND_0210,Male,46-55,High School,16,Asian,1
+CAND_0211,Male,18-25,High School,10,Asian,1
+CAND_0212,Other,36-45,High School,17,Hispanic,0
+CAND_0213,Male,18-25,Master,16,Black,0
+CAND_0214,Male,26-35,High School,6,White,1
+CAND_0215,Other,26-35,Bachelor,16,Black,0
+CAND_0216,Male,26-35,Master,19,White,1
+CAND_0217,Male,46-55,Bachelor,8,White,0
+CAND_0218,Other,18-25,Master,16,Hispanic,1
+CAND_0219,Female,46-55,High School,19,Black,0
+CAND_0220,Male,46-55,High School,7,White,1
+CAND_0221,Male,26-35,High School,16,White,1
+CAND_0222,Other,26-35,High School,6,Hispanic,1
+CAND_0223,Female,46-55,Bachelor,0,White,1
+CAND_0224,Female,18-25,High School,12,Asian,1
+CAND_0225,Male,36-45,High School,18,Black,0
+CAND_0226,Other,46-55,High School,18,Black,1
+CAND_0227,Male,18-25,Bachelor,16,Black,0
+CAND_0228,Male,26-35,Bachelor,12,Asian,0
+CAND_0229,Female,26-35,Bachelor,15,White,1
+CAND_0230,Female,18-25,Bachelor,7,Hispanic,0
+CAND_0231,Male,36-45,Master,18,Black,1
+CAND_0232,Female,26-35,High School,17,White,0
+CAND_0233,Other,26-35,Master,0,Asian,1
+CAND_0234,Other,26-35,Master,13,Asian,1
+CAND_0235,Female,18-25,High School,18,Hispanic,0
+CAND_0236,Male,46-55,Master,14,Asian,0
+CAND_0237,Male,26-35,PhD,17,Asian,1
+CAND_0238,Male,46-55,High School,1,Hispanic,0
+CAND_0239,Other,36-45,Bachelor,16,Asian,1
+CAND_0240,Female,26-35,Master,17,Hispanic,0
+CAND_0241,Other,26-35,Master,5,Hispanic,0
+CAND_0242,Female,36-45,High School,18,Hispanic,1
+CAND_0243,Female,26-35,Bachelor,3,Asian,0
+CAND_0244,Male,46-55,Bachelor,0,White,0
+CAND_0245,Female,18-25,Bachelor,7,Asian,0
+CAND_0246,Male,46-55,Master,6,Asian,1
+CAND_0247,Female,18-25,Bachelor,2,White,0
+CAND_0248,Female,18-25,Bachelor,9,Asian,1
+CAND_0249,Other,46-55,Master,9,White,0
+CAND_0250,Male,46-55,High School,18,White,1
+CAND_0251,Male,46-55,Bachelor,13,Hispanic,0
+CAND_0252,Male,46-55,Master,1,White,0
+CAND_0253,Male,36-45,Master,0,Asian,1
+CAND_0254,Male,26-35,Bachelor,17,Asian,0
+CAND_0255,Male,18-25,Bachelor,6,Black,1
+CAND_0256,Male,46-55,High School,7,White,0
+CAND_0257,Male,46-55,Bachelor,0,White,0
+CAND_0258,Male,46-55,Bachelor,2,Hispanic,0
+CAND_0259,Female,36-45,Bachelor,7,Other,0
+CAND_0260,Male,46-55,Bachelor,14,Hispanic,0
+CAND_0261,Male,46-55,Bachelor,4,White,1
+CAND_0262,Male,46-55,High School,2,Hispanic,1
+CAND_0263,Female,26-35,Bachelor,18,Black,0
+CAND_0264,Male,36-45,Bachelor,0,Asian,0
+CAND_0265,Male,46-55,Bachelor,14,White,0
+CAND_0266,Female,18-25,High School,7,Asian,0
+CAND_0267,Other,18-25,Master,1,Black,1
+CAND_0268,Male,18-25,Bachelor,2,Other,0
+CAND_0269,Other,36-45,Master,13,White,1
+CAND_0270,Female,36-45,Master,13,Hispanic,0
+CAND_0271,Male,18-25,Bachelor,10,Other,1
+CAND_0272,Male,46-55,High School,15,White,1
+CAND_0273,Female,36-45,Bachelor,3,Other,1
+CAND_0274,Female,18-25,Bachelor,19,Hispanic,0
+CAND_0275,Other,18-25,Master,4,White,1
+CAND_0276,Female,46-55,Bachelor,13,White,0
+CAND_0277,Female,26-35,High School,15,Hispanic,0
+CAND_0278,Male,36-45,Bachelor,17,White,1
+CAND_0279,Male,46-55,Bachelor,6,Black,0
+CAND_0280,Female,18-25,Master,9,White,1
+CAND_0281,Other,18-25,Bachelor,6,Hispanic,1
+CAND_0282,Male,46-55,Bachelor,0,White,0
+CAND_0283,Female,36-45,PhD,18,Asian,0
+CAND_0284,Other,26-35,Master,15,Other,1
+CAND_0285,Female,26-35,Bachelor,18,Other,0
+CAND_0286,Other,18-25,High School,3,Hispanic,1
+CAND_0287,Male,36-45,High School,17,White,0
+CAND_0288,Male,26-35,Bachelor,1,Asian,1
+CAND_0289,Female,36-45,High School,0,White,0
+CAND_0290,Male,36-45,High School,14,White,1
+CAND_0291,Male,18-25,Bachelor,4,White,1
+CAND_0292,Female,26-35,High School,19,Black,0
+CAND_0293,Male,46-55,Master,10,Asian,1
+CAND_0294,Other,18-25,High School,9,Hispanic,0
+CAND_0295,Male,26-35,Bachelor,1,Black,0
+CAND_0296,Female,26-35,Bachelor,2,White,0
+CAND_0297,Male,26-35,PhD,11,Other,0
+CAND_0298,Male,26-35,High School,19,Black,0
+CAND_0299,Other,26-35,Bachelor,4,Black,0
+CAND_0300,Male,36-45,PhD,4,White,0
