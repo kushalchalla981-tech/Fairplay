@@ -4,8 +4,6 @@ import numpy as np
 from typing import Tuple, Optional, Dict
 from dataclasses import dataclass
 
-FOUR_FIFTHS_THRESHOLD = 0.8
-
 AIF360_AVAILABLE = False
 try:
     from aif360.algorithms.preprocessing import Reweighing
@@ -80,49 +78,56 @@ class BiasMitigator:
         self,
         df: pd.DataFrame,
         sensitive_col: str,
-        target_col: str,
-        max_iterations: int = 5
+        target_col: str
     ) -> pd.DataFrame:
-        """Fallback reweighting using pandas/numpy with iterative fixing."""
-        df_current = df.copy()
+        """Fallback reweighting using pandas/numpy."""
+        df_weighted = df.copy()
         
         groups = df[sensitive_col].unique()
+        
         if len(groups) < 2:
-            return df_current
+            return df_weighted
         
-        for iteration in range(max_iterations):
-            positive_rates = df_current.groupby(sensitive_col)[target_col].mean()
-            best_group = positive_rates.idxmax()
-            worst_group = positive_rates.idxmin()
-            
-            best_rate = positive_rates[best_group]
-            worst_rate = positive_rates[worst_group]
-            target_rate = best_rate * FOUR_FIFTHS_THRESHOLD
-            
-            # Check if all groups pass
-            all_pass = all(rate >= target_rate for rate in positive_rates)
-            if all_pass or worst_rate >= target_rate:
-                break
-            
-            # Skip if worst group has no positive examples (can't fix with reweighting)
-            worst_positive_count = ((df_current[sensitive_col] == worst_group) & (df_current[target_col] == 1)).sum()
-            if worst_positive_count == 0:
-                break
-            
-            # Calculate upweight factor for worst group
-            upweight_factor = min(target_rate / worst_rate, 3.0)
-            
-            # Apply weights
-            weights = np.ones(len(df_current))
-            worst_positive_mask = (df_current[sensitive_col] == worst_group) & (df_current[target_col] == 1)
-            weights[worst_positive_mask] = upweight_factor
-            
-            df_current['_weight'] = np.ceil(weights).astype(int).clip(1, 3)
-            df_current = df_current.loc[df_current.index.repeat(df_current['_weight'])].drop(columns=['_weight']).reset_index(drop=True)
+        group_stats = {}
+        for group in groups:
+            group_df = df[df[sensitive_col] == group]
+            group_stats[group] = {
+                'count': len(group_df),
+                'positive': group_df[target_col].sum(),
+                'rate': group_df[target_col].mean()
+            }
         
-        self.method_used = "fallback_reweighing_iterative"
-        self.mitigated_df = df_current
-        return df_current
+        counts = [(g, s['count']) for g, s in group_stats.items()]
+        counts.sort(key=lambda x: x[1], reverse=True)
+        majority_group = counts[0][0]
+        minority_group = counts[-1][0]
+        
+        majority_rate = group_stats[majority_group]['rate']
+        minority_rate = group_stats[minority_group]['rate']
+        
+        if minority_rate > 0:
+            adjustment_factor = (majority_rate * 0.8) / minority_rate
+        else:
+            adjustment_factor = 2.0
+        
+        adjustment_factor = max(1.0, min(adjustment_factor, 3.0))
+        
+        weights = np.ones(len(df))
+        
+        minority_mask = (df[sensitive_col] == minority_group) & (df[target_col] == 1)
+        weights[minority_mask] = adjustment_factor
+        
+        df_weighted['_weight'] = weights
+        df_weighted['_weight'] = df_weighted['_weight'].round()
+        df_weighted['_weight'] = df_weighted['_weight'].clip(lower=1, upper=3)
+        
+        df_mitigated = df_weighted.loc[df_weighted.index.repeat(df_weighted['_weight'].astype(int))]
+        df_mitigated = df_mitigated.drop(columns=['_weight']).reset_index(drop=True)
+        
+        self.method_used = "fallback_reweighing"
+        self.mitigated_df = df_mitigated
+        
+        return df_mitigated
     
     def apply_mitigation(
         self,
