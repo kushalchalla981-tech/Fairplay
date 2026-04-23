@@ -1,60 +1,115 @@
-<div align="center">
-  <h1>⚖️ Fairplay Dashboard</h1>
-  <p><b>Detect. Measure. Correct. — AI Bias Ends Here.</b></p>
-  <p>The World's First Open Source AI Bias Auditing Engine.</p>
-</div>
+# AI Fairness Auditing Dashboard
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-1.28+-red.svg" alt="Streamlit">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+</p>
 
-## 🚀 Quick Start
+A production-grade AI Fairness Auditing Dashboard for detecting, visualizing, and mitigating bias in machine learning datasets and model outputs. Built for compliance officers and non-technical stakeholders.
 
-Fairplay is divided into two separate architectures: a highly responsive **React/Vite Frontend** and a powerful **FastAPI Backend**. To run the application locally, you'll need to start both servers.
+## Features
 
-### 1. Start the Backend
+- **Data Ingestion** - Upload CSV files with automatic detection of sensitive attributes and target columns
+- **Fairness Metrics** - Calculate Demographic Parity Ratio (Four-Fifths Rule) and Demographic Parity Difference
+- **Interactive Visualization** - Plotly bar charts with 0.8 threshold line
+- **Bias Detection** - PASS/FAIL compliance cards with risk levels
+- **Bias Mitigation** - Apply reweighting algorithm to reduce bias
+- **Before/After Comparison** - Side-by-side metrics comparison
+- **Export** - Download reweighted datasets and HTML compliance reports
 
-The backend powers the heavy data analytics, fairness metrics calculation, and bias mitigation algorithms. The supported local entrypoint is the root-level FastAPI app in `api.py`.
+## Regulatory Compliance
+
+- EU AI Act (High-Risk Systems)
+- India DPDPA (Non-Discrimination)
+- US EEOC Four-Fifths Rule (80% threshold)
+
+## Tech Stack
+
+- **Frontend**: Streamlit + Plotly
+- **Backend**: Python 3.10+
+- **Core Libraries**: pandas, numpy, fairlearn, aif360, scikit-learn
+
+## Installation
 
 ```bash
-# 1. From the repository root, create and activate a virtual environment (recommended)
-python -m venv .venv
-source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+# Clone the repository
+git clone https://github.com/kushalchalla981-tech/Fairplay.git
+cd Fairplay
 
-# 2. Install the dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 3. Start the FastAPI server
-uvicorn api:app --reload --port 8000
+# Run the application
+streamlit run app.py
 ```
-*The API will be available at `http://localhost:8000`*
 
-### 2. Start the Frontend
+## Usage
 
-The frontend provides the beautiful, interactive dashboard built with React, Vite, and TailwindCSS.
+1. **Upload Dataset** - Click "Choose a CSV file" to upload your data
+2. **Select Columns** - Choose the sensitive attribute (e.g., gender) and target column (e.g., approved)
+3. **Run Analysis** - Click "Run Fairness Analysis" to calculate metrics
+4. **View Results** - See PASS/FAIL status, charts, and detailed metrics
+5. **Apply Mitigation** - If bias is detected, apply reweighing algorithm
+6. **Export** - Download the reweighted dataset and compliance report
 
-Open a **new terminal tab/window**, then:
+## Project Structure
 
-```bash
-# 1. Navigate to the frontend directory
-cd frontend
-
-# 2. Install Node dependencies
-npm install
-
-# 3. Start the Vite development server
-npm run dev
 ```
-*The UI will be accessible at `http://localhost:5173`*
+fairness-dashboard/
+├── app.py                      # Main Streamlit application
+├── requirements.txt            # Python dependencies
+├── utils/
+│   ├── data_loader.py         # CSV upload and column detection
+│   ├── metrics.py             # Fairness metric calculations
+│   ├── visualization.py       # Plotly chart generators
+│   ├── mitigation.py          # Reweighting algorithm
+│   └── report_generator.py    # PDF/HTML report generation
+└── data/
+    └── sample_datasets/       # Sample data for testing
+        ├── balanced_sample.csv
+        └── unbalanced_sample.csv
+```
 
----
+## Demo
 
-### 🌟 Features
+The dashboard includes sample datasets:
+- `balanced_sample.csv` - Dataset that passes Four-Fifths Rule (DPR ≈ 0.96)
+- `unbalanced_sample.csv` - Dataset that fails Four-Fifths Rule (DPR = 0.31)
 
-- **Bias Auditing**: Upload your datasets and automatically calculate the Demographic Parity Ratio and Demographic Parity Difference.
-- **Visual Analytics**: Interactive Recharts-based visualizations comparing protected groups.
-- **Automated Mitigation**: Reweight the data to automatically neutralize biased outcomes without throwing away records.
-- **Compliance Reporting**: Instantly export a formatted HTML audit report passing global AI compliance benchmarks.
+## Understanding the Metrics
 
-### 🛠️ Tech Stack
+### Demographic Parity Ratio (Disparate Impact)
+- **Formula**: Minority group positive rate / Majority group positive rate
+- **Four-Fifths Rule**: Pass if ratio ≥ 0.8 (80%)
+- **Risk Levels**:
+  - Low: ≥ 0.8 (Compliant)
+  - Medium: 0.65 - 0.8
+  - High: < 0.65
 
-**Frontend:** React 19, Vite, TailwindCSS, Framer Motion, Recharts  
-**Backend:** FastAPI, Pandas, Scikit-Learn
+### Demographic Parity Difference
+- **Formula**: Minority positive rate - Majority positive rate
+- **Threshold**: ±10% (0.1)
+
+## Screenshots
+
+| Component | Description |
+|-----------|-------------|
+| Upload Section | Drag & drop CSV files |
+| Results Card | PASS/FAIL with color coding |
+| Bar Chart | Group comparison with threshold line |
+| Comparison | Before/after metrics side-by-side |
+
+## License
+
+MIT License - See LICENSE file for details
+
+## Contributors
+
+- Built for the Cepheus 2.0 2026 Hackathon
+
+## Acknowledgments
+
+- [Fairlearn](https://fairlearn.org/) - Fairness metrics
+- [AIF360](https://aif360.readthedocs.io/) - Bias mitigation algorithms
+- [Streamlit](https://streamlit.io/) - Web framework
