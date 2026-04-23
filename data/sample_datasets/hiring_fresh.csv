@@ -1,0 +1,367 @@
+candidate_id,gender,age,education,years_experience,ethnicity,interview_score,hired
+H00001,Male,54,Bachelor,17,Other,60,0
+H00002,Female,47,High School,21,Black,70,1
+H00003,Female,50,PhD,14,Asian,76,1
+H00004,Other,38,Master,2,White,68,0
+H00005,Other,25,Master,20,Hispanic,83,1
+H00006,Female,43,PhD,5,Other,59,0
+H00007,Other,43,Bachelor,5,White,52,1
+H00008,Female,42,High School,10,Asian,87,1
+H00009,Female,47,Bachelor,20,Hispanic,58,0
+H00010,Female,36,Master,15,White,94,0
+H00011,Female,50,Master,4,Black,88,0
+H00012,Male,38,High School,10,Hispanic,91,0
+H00013,Male,27,Master,20,Asian,53,0
+H00014,Male,23,PhD,9,White,68,1
+H00015,Male,52,Master,12,White,80,1
+H00016,Male,44,Master,9,Other,57,1
+H00017,Female,22,High School,21,Black,62,0
+H00018,Male,51,High School,19,Black,67,0
+H00019,Male,29,High School,5,White,75,0
+H00020,Male,29,Bachelor,21,Hispanic,90,1
+H00021,Female,47,Bachelor,15,Asian,74,0
+H00022,Female,28,Bachelor,14,White,66,0
+H00023,Male,46,Bachelor,18,Other,60,0
+H00024,Other,53,High School,11,Asian,72,0
+H00025,Female,34,High School,5,White,67,0
+H00026,Male,47,Master,2,Other,91,1
+H00027,Female,30,PhD,22,Black,77,0
+H00028,Male,25,Bachelor,8,Hispanic,91,0
+H00029,Female,36,Bachelor,8,Black,74,0
+H00030,Female,28,Master,24,Black,90,0
+H00031,Male,38,Master,24,White,59,1
+H00032,Female,54,High School,23,White,75,1
+H00033,Female,30,Master,17,Black,94,1
+H00034,Other,37,Bachelor,14,White,59,0
+H00035,Female,32,Master,7,Asian,50,0
+H00036,Other,23,Master,13,Black,60,0
+H00037,Female,47,Master,21,Black,83,0
+H00038,Male,36,PhD,9,White,55,1
+H00039,Male,43,High School,24,Other,67,1
+H00040,Female,23,PhD,7,Black,93,1
+H00041,Female,32,High School,4,Asian,55,0
+H00042,Female,46,Master,15,White,93,0
+H00043,Female,32,PhD,0,White,81,0
+H00044,Female,23,High School,6,Asian,64,0
+H00045,Male,54,Master,8,White,82,1
+H00046,Male,29,Master,5,Other,92,1
+H00047,Female,29,Master,7,White,69,0
+H00048,Female,44,Master,7,White,99,0
+H00049,Male,46,Bachelor,20,Black,68,0
+H00050,Male,45,Bachelor,24,Hispanic,73,0
+H00051,Male,53,Bachelor,3,Hispanic,60,0
+H00052,Female,51,PhD,11,Asian,88,0
+H00053,Male,22,Bachelor,22,Other,71,0
+H00054,Female,46,Master,15,Black,54,0
+H00055,Male,27,High School,13,Other,65,1
+H00056,Female,40,High School,1,Hispanic,59,0
+H00057,Male,23,Master,13,Black,79,0
+H00058,Male,24,High School,18,Other,79,0
+H00059,Male,26,High School,1,Black,55,1
+H00060,Female,29,High School,0,Asian,82,0
+H00061,Male,37,Bachelor,15,White,97,1
+H00062,Male,45,Master,15,White,73,1
+H00063,Male,27,High School,19,White,69,1
+H00064,Other,45,PhD,18,Other,79,1
+H00065,Female,31,High School,15,Other,73,0
+H00066,Female,35,Bachelor,8,White,56,1
+H00067,Female,31,High School,7,White,71,1
+H00068,Other,44,Master,4,Black,71,1
+H00069,Female,24,Master,9,White,82,0
+H00070,Female,35,Bachelor,14,White,70,1
+H00071,Other,48,PhD,11,Hispanic,79,1
+H00072,Female,39,PhD,13,Hispanic,76,0
+H00073,Male,30,PhD,12,Hispanic,56,1
+H00074,Male,30,High School,19,Hispanic,52,0
+H00075,Male,35,Bachelor,10,Hispanic,51,0
+H00076,Female,35,Bachelor,1,White,81,0
+H00077,Female,44,High School,1,Asian,77,1
+H00078,Other,38,High School,21,Hispanic,53,0
+H00079,Female,23,PhD,8,White,71,0
+H00080,Male,35,High School,2,Other,94,1
+H00081,Male,48,Bachelor,19,Black,80,1
+H00082,Male,36,High School,13,White,57,0
+H00083,Other,50,High School,6,Hispanic,83,0
+H00084,Male,45,Bachelor,6,Black,57,0
+H00085,Male,44,Master,23,Hispanic,67,0
+H00086,Other,40,Master,24,Other,70,1
+H00087,Other,48,High School,2,White,86,1
+H00088,Female,34,High School,9,Black,51,0
+H00089,Other,23,PhD,14,Asian,50,1
+H00090,Male,52,High School,2,Black,88,1
+H00091,Female,43,Master,14,Hispanic,99,0
+H00092,Female,43,Master,13,Hispanic,92,0
+H00093,Female,30,Master,23,White,96,0
+H00094,Female,28,PhD,21,Other,54,0
+H00095,Male,42,Bachelor,7,Other,76,0
+H00096,Male,52,Master,4,White,70,1
+H00097,Other,29,Bachelor,9,Asian,66,1
+H00098,Female,48,PhD,23,Black,60,0
+H00099,Male,49,PhD,12,White,97,1
+H00100,Male,42,High School,10,Black,64,0
+H00101,Male,37,Master,23,White,85,0
+H00102,Female,41,Master,9,White,80,0
+H00103,Other,40,Master,24,Black,56,1
+H00104,Male,52,PhD,24,White,76,1
+H00105,Female,28,PhD,10,Other,72,1
+H00106,Female,52,PhD,12,Asian,78,0
+H00107,Male,39,High School,13,White,64,1
+H00108,Male,46,Master,15,White,79,0
+H00109,Male,52,Master,3,Hispanic,71,1
+H00110,Female,50,Master,9,White,61,1
+H00111,Female,33,Bachelor,15,White,65,0
+H00112,Female,49,Master,9,Hispanic,63,0
+H00113,Male,28,Bachelor,23,Black,73,0
+H00114,Female,25,High School,24,White,59,1
+H00115,Female,33,Bachelor,18,White,79,1
+H00116,Female,40,Master,2,Hispanic,62,0
+H00117,Male,34,Master,15,White,70,1
+H00118,Male,48,Bachelor,1,Hispanic,78,1
+H00119,Male,35,Bachelor,9,White,50,0
+H00120,Female,53,Bachelor,20,Other,75,1
+H00121,Male,37,PhD,13,Black,71,1
+H00122,Female,27,Bachelor,12,Black,52,0
+H00123,Female,53,Bachelor,1,White,75,1
+H00124,Female,53,Master,20,Asian,71,0
+H00125,Female,53,PhD,13,White,83,1
+H00126,Female,52,Bachelor,5,Asian,95,1
+H00127,Male,30,Bachelor,8,Hispanic,84,1
+H00128,Female,24,Bachelor,23,Black,56,1
+H00129,Male,27,Master,13,Asian,99,1
+H00130,Female,54,High School,20,White,91,1
+H00131,Other,28,Bachelor,22,White,95,1
+H00132,Female,36,Master,0,Hispanic,73,0
+H00133,Female,24,High School,15,Black,82,0
+H00134,Other,44,Bachelor,15,Hispanic,71,0
+H00135,Male,31,High School,12,Black,99,0
+H00136,Female,44,Master,5,Black,82,0
+H00137,Female,23,High School,24,Hispanic,54,0
+H00138,Female,45,Bachelor,2,Hispanic,63,0
+H00139,Female,26,Master,18,Hispanic,77,0
+H00140,Female,33,PhD,19,Asian,91,1
+H00141,Female,31,Bachelor,22,White,58,0
+H00142,Female,52,PhD,4,White,69,0
+H00143,Female,48,Master,6,Asian,66,0
+H00144,Male,51,PhD,24,Hispanic,67,0
+H00145,Other,33,High School,24,Black,86,1
+H00146,Other,30,Bachelor,20,White,50,0
+H00147,Female,23,High School,16,White,89,0
+H00148,Male,28,PhD,24,Other,81,1
+H00149,Male,37,High School,5,Other,83,0
+H00150,Female,39,High School,15,Asian,73,0
+H00151,Male,51,Bachelor,21,White,81,0
+H00152,Male,37,Bachelor,9,White,73,1
+H00153,Other,47,Master,18,Hispanic,96,1
+H00154,Male,41,Bachelor,3,Black,94,0
+H00155,Male,28,High School,18,Asian,61,1
+H00156,Other,37,PhD,22,Hispanic,74,1
+H00157,Male,42,PhD,12,White,69,1
+H00158,Female,22,Master,6,Asian,83,1
+H00159,Male,28,High School,13,White,81,1
+H00160,Female,25,High School,4,Hispanic,77,1
+H00161,Male,54,Bachelor,3,Hispanic,84,0
+H00162,Other,27,High School,2,Black,82,0
+H00163,Male,39,Bachelor,11,Black,50,1
+H00164,Male,38,High School,18,Black,99,0
+H00165,Female,41,PhD,9,Hispanic,95,1
+H00166,Male,51,Bachelor,4,White,66,1
+H00167,Other,48,Master,22,Other,54,1
+H00168,Female,42,Master,10,Black,60,0
+H00169,Female,46,Bachelor,16,White,52,0
+H00170,Other,32,Bachelor,21,Asian,92,1
+H00171,Female,32,Bachelor,22,White,75,1
+H00172,Male,51,PhD,8,Asian,95,1
+H00173,Male,22,PhD,24,White,72,1
+H00174,Male,38,Bachelor,9,Hispanic,75,1
+H00175,Male,22,PhD,6,White,62,0
+H00176,Male,54,Bachelor,9,Other,55,1
+H00177,Male,44,PhD,24,White,80,1
+H00178,Female,38,PhD,12,Other,76,0
+H00179,Male,34,PhD,12,Black,61,1
+H00180,Female,45,Master,3,Other,76,1
+H00181,Female,53,Master,4,White,99,0
+H00182,Other,51,Master,6,Other,64,0
+H00183,Female,27,Master,3,Hispanic,73,0
+H00184,Male,44,Bachelor,18,Asian,68,1
+H00185,Other,38,Bachelor,0,Hispanic,60,1
+H00186,Female,46,High School,3,Black,75,0
+H00187,Female,30,High School,16,White,52,0
+H00188,Female,40,Master,20,Hispanic,51,0
+H00189,Male,37,Bachelor,15,Black,77,0
+H00190,Male,35,Bachelor,20,Other,63,0
+H00191,Female,23,Bachelor,10,Black,56,0
+H00192,Male,54,Bachelor,14,Black,77,1
+H00193,Female,46,Master,3,Black,63,0
+H00194,Male,42,Bachelor,22,Other,61,0
+H00195,Male,30,Bachelor,24,White,50,1
+H00196,Female,33,High School,8,White,86,0
+H00197,Male,43,High School,8,White,95,1
+H00198,Male,40,Master,18,Black,56,0
+H00199,Other,49,PhD,6,White,64,0
+H00200,Female,24,Master,15,Hispanic,98,0
+H00201,Male,52,Bachelor,6,White,57,1
+H00202,Female,28,Master,7,Black,77,0
+H00203,Female,54,Master,20,Hispanic,50,1
+H00204,Female,47,PhD,0,Hispanic,67,0
+H00205,Female,45,High School,23,Asian,63,0
+H00206,Female,28,PhD,24,Hispanic,67,1
+H00207,Male,39,High School,2,White,87,0
+H00208,Other,43,Master,8,Asian,83,1
+H00209,Female,45,Master,14,White,84,0
+H00210,Male,22,High School,11,Other,87,0
+H00211,Female,50,Master,24,Hispanic,64,0
+H00212,Male,22,Master,7,Hispanic,78,0
+H00213,Female,25,Master,9,Asian,53,0
+H00214,Female,52,High School,19,Hispanic,80,1
+H00215,Female,43,Bachelor,10,Other,81,1
+H00216,Male,48,High School,7,White,90,1
+H00217,Female,48,Bachelor,9,White,84,0
+H00218,Male,47,Master,17,White,77,1
+H00219,Male,42,Master,19,White,60,1
+H00220,Other,54,Master,12,Black,73,0
+H00221,Male,37,Bachelor,21,White,83,0
+H00222,Other,48,High School,9,White,82,1
+H00223,Female,46,PhD,17,White,82,0
+H00224,Male,38,Bachelor,10,White,63,1
+H00225,Male,53,Bachelor,10,White,60,1
+H00226,Male,45,Master,7,Black,75,1
+H00227,Male,30,PhD,15,Other,74,0
+H00228,Male,43,PhD,22,Other,71,0
+H00229,Female,33,Master,5,Asian,81,0
+H00230,Female,35,Bachelor,6,Black,77,0
+H00231,Female,54,Master,2,Asian,69,1
+H00232,Female,23,PhD,2,White,63,0
+H00233,Male,47,PhD,3,Asian,86,1
+H00234,Female,39,High School,14,Asian,53,0
+H00235,Other,40,PhD,10,White,83,0
+H00236,Female,40,PhD,2,Black,82,0
+H00237,Male,47,Master,11,Black,79,0
+H00238,Female,40,PhD,8,White,68,0
+H00239,Male,22,High School,10,Other,70,1
+H00240,Male,50,PhD,21,Black,95,0
+H00241,Female,37,PhD,7,Asian,63,0
+H00242,Male,42,Bachelor,2,Hispanic,52,1
+H00243,Female,31,PhD,0,Hispanic,71,0
+H00244,Female,30,PhD,18,Other,73,0
+H00245,Female,29,PhD,20,White,59,1
+H00246,Male,40,PhD,16,Other,85,0
+H00247,Female,46,PhD,8,Other,83,0
+H00248,Male,54,Bachelor,1,Hispanic,69,1
+H00249,Female,50,Bachelor,9,Black,62,0
+H00250,Male,49,Bachelor,22,Hispanic,78,1
+H00251,Female,53,Bachelor,12,White,67,0
+H00252,Female,53,High School,9,White,61,0
+H00253,Female,23,Master,9,Black,76,0
+H00254,Male,27,High School,18,White,72,1
+H00255,Male,29,High School,23,Asian,94,1
+H00256,Male,33,PhD,18,Black,84,0
+H00257,Male,52,Bachelor,24,White,68,1
+H00258,Other,33,Master,3,Black,83,0
+H00259,Male,30,Master,15,White,90,1
+H00260,Male,25,Bachelor,0,Hispanic,99,1
+H00261,Male,49,Master,15,White,61,0
+H00262,Female,53,PhD,5,Hispanic,97,1
+H00263,Male,53,High School,13,Black,60,0
+H00264,Female,34,High School,16,Hispanic,59,0
+H00265,Male,23,High School,12,Other,80,0
+H00266,Other,43,High School,18,Asian,92,1
+H00267,Male,50,Master,23,White,73,1
+H00268,Male,45,High School,11,Hispanic,69,1
+H00269,Male,44,PhD,8,Asian,69,1
+H00270,Female,27,PhD,3,Black,87,0
+H00271,Male,47,Bachelor,14,White,82,1
+H00272,Male,25,High School,17,Hispanic,84,1
+H00273,Female,38,Bachelor,24,Hispanic,79,0
+H00274,Female,47,Master,20,White,87,0
+H00275,Female,42,High School,20,Hispanic,61,0
+H00276,Female,26,PhD,8,White,72,1
+H00277,Male,44,PhD,4,Black,81,0
+H00278,Female,50,Master,23,Other,56,1
+H00279,Female,44,Master,21,Other,69,1
+H00280,Female,30,Master,22,Asian,58,0
+H00281,Female,46,Bachelor,7,White,75,1
+H00282,Other,52,Bachelor,8,Asian,66,0
+H00283,Female,41,High School,5,White,76,0
+H00284,Female,38,PhD,2,Other,57,1
+H00285,Female,48,Bachelor,19,Other,65,0
+H00286,Other,49,High School,21,Black,91,1
+H00287,Other,22,PhD,24,Black,94,0
+H00288,Female,42,High School,24,White,73,1
+H00289,Female,28,Master,16,Black,82,0
+H00290,Female,44,High School,2,Asian,52,0
+H00291,Female,23,PhD,3,Asian,56,0
+H00292,Male,47,PhD,22,Asian,86,1
+H00293,Male,54,PhD,21,Other,60,0
+H00294,Female,23,Master,11,Black,50,0
+H00295,Female,44,PhD,5,Hispanic,59,0
+H00296,Male,40,High School,6,Other,63,1
+H00297,Other,32,PhD,22,Hispanic,76,0
+H00298,Female,44,Master,9,Asian,94,1
+H00299,Female,34,High School,8,White,65,0
+H00300,Female,52,PhD,9,Hispanic,88,1
+H00301,Female,37,Bachelor,18,White,79,0
+H00302,Male,22,Master,24,Other,68,1
+H00303,Male,32,Bachelor,13,White,75,1
+H00304,Female,47,PhD,7,Hispanic,98,0
+H00305,Male,50,PhD,8,Asian,58,0
+H00306,Male,49,PhD,4,Asian,77,1
+H00307,Female,40,PhD,13,Asian,94,0
+H00308,Female,41,PhD,21,White,71,0
+H00309,Female,43,Bachelor,22,White,81,0
+H00310,Male,29,PhD,7,Other,64,1
+H00311,Male,45,PhD,14,White,70,1
+H00312,Male,35,Bachelor,10,Hispanic,93,1
+H00313,Male,31,High School,0,White,91,1
+H00314,Male,51,PhD,23,Hispanic,95,0
+H00315,Male,52,Master,21,White,50,0
+H00316,Female,29,PhD,18,White,83,0
+H00317,Male,53,PhD,12,Asian,73,1
+H00318,Male,39,High School,15,White,56,1
+H00319,Male,44,Master,10,White,99,0
+H00320,Male,29,Bachelor,13,Asian,85,0
+H00321,Female,38,Bachelor,14,Black,66,0
+H00322,Female,31,PhD,7,White,59,0
+H00323,Male,47,PhD,21,Other,68,1
+H00324,Female,39,High School,24,Hispanic,85,0
+H00325,Female,48,Bachelor,11,Black,93,0
+H00326,Male,34,High School,18,Hispanic,67,1
+H00327,Other,39,Bachelor,14,Hispanic,64,0
+H00328,Female,45,Master,15,Hispanic,82,0
+H00329,Other,45,Bachelor,13,Asian,90,1
+H00330,Male,25,Bachelor,0,White,98,1
+H00331,Other,49,PhD,4,Hispanic,52,0
+H00332,Male,47,Master,22,Asian,91,1
+H00333,Female,46,PhD,22,White,73,1
+H00334,Male,29,Bachelor,23,White,58,1
+H00335,Male,35,PhD,1,Other,69,0
+H00336,Other,36,High School,5,Other,54,0
+H00337,Male,43,PhD,13,White,85,0
+H00338,Male,25,PhD,5,Hispanic,81,0
+H00339,Male,32,PhD,12,White,81,0
+H00340,Female,40,PhD,21,Other,97,1
+H00341,Female,23,High School,22,White,58,0
+H00342,Female,42,Master,21,White,58,1
+H00343,Female,25,PhD,22,Hispanic,82,0
+H00344,Female,23,Bachelor,6,White,69,0
+H00345,Male,46,Bachelor,23,Asian,79,1
+H00346,Female,49,Bachelor,10,Asian,75,0
+H00347,Other,40,Bachelor,4,White,76,0
+H00348,Female,44,PhD,3,Black,85,0
+H00349,Female,40,Bachelor,14,White,80,0
+H00350,Female,46,PhD,7,White,63,1
+H00351,Male,24,Master,19,White,57,0
+H00352,Male,34,Master,1,Other,73,1
+H00353,Male,34,PhD,7,White,81,1
+H00354,Female,34,PhD,12,Black,55,0
+H00355,Female,40,Bachelor,19,Asian,71,0
+H00356,Male,40,Bachelor,12,Asian,83,1
+H00357,Male,25,Bachelor,12,Black,94,1
+H00358,Male,50,PhD,12,White,68,1
+H00359,Male,51,High School,22,Black,82,0
+H00360,Male,51,PhD,19,White,78,1
+H00361,Other,35,PhD,11,Hispanic,60,1
+H00362,Male,50,High School,8,Black,84,0
+H00363,Male,26,High School,21,Hispanic,84,1
+H00364,Male,25,High School,23,Asian,71,1
+H00365,Male,37,High School,19,Black,80,0
+H00366,Male,38,Master,5,White,82,0
