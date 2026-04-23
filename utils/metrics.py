@@ -30,7 +30,8 @@ class FairnessResult:
 def calculate_demographic_parity_ratio(
     df: pd.DataFrame,
     sensitive_col: str,
-    target_col: str
+    target_col: str,
+    reference_group: Optional[str] = None
 ) -> FairnessResult:
     """Calculate Demographic Parity Ratio (Four-Fifths Rule)."""
     sensitive_values = df[sensitive_col].dropna().unique()
@@ -44,13 +45,17 @@ def calculate_demographic_parity_ratio(
             details={"message": "Need 2+ groups for comparison"}
         )
     
-    value_counts = df[sensitive_col].value_counts()
-    majority_group = value_counts.index[0]
-    minority_group = value_counts.index[-1] if len(value_counts) > 1 else value_counts.index[0]
-    
-    majority_positive = df[df[sensitive_col] == majority_group][target_col].mean()
-    minority_positive = df[df[sensitive_col] == minority_group][target_col].mean()
-    
+    positive_rates = df.groupby(sensitive_col)[target_col].mean()
+    if reference_group and reference_group in positive_rates.index:
+        majority_group = reference_group
+        minority_group = positive_rates.drop(reference_group).idxmin()
+    else:
+        majority_group = positive_rates.idxmax()
+        minority_group = positive_rates.idxmin()
+
+    majority_positive = positive_rates[majority_group]
+    minority_positive = positive_rates[minority_group]
+
     if majority_positive == 0:
         ratio = np.nan
     else:
@@ -90,7 +95,8 @@ def calculate_demographic_parity_ratio(
 def calculate_demographic_parity_difference(
     df: pd.DataFrame,
     sensitive_col: str,
-    target_col: str
+    target_col: str,
+    reference_group: Optional[str] = None
 ) -> FairnessResult:
     """Calculate Demographic Parity Difference."""
     sensitive_values = df[sensitive_col].dropna().unique()
@@ -104,13 +110,17 @@ def calculate_demographic_parity_difference(
             details={"message": "Need 2+ groups for comparison"}
         )
     
-    value_counts = df[sensitive_col].value_counts()
-    majority_group = value_counts.index[0]
-    minority_group = value_counts.index[-1] if len(value_counts) > 1 else value_counts.index[0]
-    
-    majority_positive = df[df[sensitive_col] == majority_group][target_col].mean()
-    minority_positive = df[df[sensitive_col] == minority_group][target_col].mean()
-    
+    positive_rates = df.groupby(sensitive_col)[target_col].mean()
+    if reference_group and reference_group in positive_rates.index:
+        majority_group = reference_group
+        minority_group = positive_rates.drop(reference_group).idxmin()
+    else:
+        majority_group = positive_rates.idxmax()
+        minority_group = positive_rates.idxmin()
+
+    majority_positive = positive_rates[majority_group]
+    minority_positive = positive_rates[minority_group]
+
     difference = minority_positive - majority_positive
     abs_diff = abs(difference)
     threshold = 0.1
@@ -223,13 +233,14 @@ def calculate_all_metrics(
     df: pd.DataFrame,
     sensitive_col: str,
     target_col: str,
+    reference_group: Optional[str] = None,
     include_advanced: bool = False
 ) -> Dict[str, any]:
     """Calculate all fairness metrics."""
     metrics = {}
     
-    metrics['demographic_parity_ratio'] = calculate_demographic_parity_ratio(df, sensitive_col, target_col)
-    metrics['demographic_parity_difference'] = calculate_demographic_parity_difference(df, sensitive_col, target_col)
+    metrics['demographic_parity_ratio'] = calculate_demographic_parity_ratio(df, sensitive_col, target_col, reference_group)
+    metrics['demographic_parity_difference'] = calculate_demographic_parity_difference(df, sensitive_col, target_col, reference_group)
     
     if include_advanced:
         equalized_odds = calculate_equalized_odds(df, sensitive_col, target_col)
