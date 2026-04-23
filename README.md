@@ -12,21 +12,18 @@ Fairplay is divided into two separate architectures: a highly responsive **React
 
 ### 1. Start the Backend
 
-The backend powers the heavy data analytics, fairness metrics calculation, and bias mitigation algorithms.
+The backend powers the heavy data analytics, fairness metrics calculation, and bias mitigation algorithms. The supported local entrypoint is the root-level FastAPI app in `api.py`.
 
 ```bash
-# 1. Navigate to the backend directory
-cd backend
-
-# 2. Create and activate a virtual environment (recommended)
+# 1. From the repository root, create and activate a virtual environment (recommended)
 python -m venv .venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 
-# 3. Install the dependencies
+# 2. Install the dependencies
 pip install -r requirements.txt
 
-# 4. Start the FastAPI server
-uvicorn main:app --reload --port 8000
+# 3. Start the FastAPI server
+uvicorn api:app --reload --port 8000
 ```
 *The API will be available at `http://localhost:8000`*
 
