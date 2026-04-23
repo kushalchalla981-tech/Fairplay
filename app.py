@@ -10,7 +10,7 @@ from utils.visualization import (
 )
 from utils.mitigation import BiasMitigator
 from utils.report_generator import ComplianceReportGenerator
-
+import plotly.streamlit as st_plotly
 
 st.set_page_config(
     page_title="AI Fairness Dashboard",
@@ -20,94 +20,18 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    /* Global Background and Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-    }
-
     .main-header {
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-weight: 700;
-        color: #1E3A8A; /* Foreground / Dark Blue */
-        margin-bottom: 0.5rem;
+        color: #1E3A5F;
     }
-
-    .sub-header {
-        font-size: 1.1rem;
-        color: #3B82F6; /* Secondary Blue */
-        margin-bottom: 2rem;
-    }
-
-    /* Cards for metrics */
-    .metric-card {
-        background-color: white;
-        border: 1px solid #DBEAFE;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        margin-bottom: 1rem;
-    }
-
-    /* Upload Box Styling */
     .upload-box {
-        border: 2px dashed #3B82F6;
-        border-radius: 12px;
-        padding: 2.5rem;
+        border: 2px dashed #4A90D9;
+        border-radius: 10px;
+        padding: 2rem;
         text-align: center;
-        background-color: #F8FAFC;
-        transition: all 0.3s ease;
-    }
-    .upload-box:hover {
-        background-color: #F1F5F9;
-        border-color: #1E40AF;
-    }
-
-    /* Status Badges */
-    .badge-pass {
-        background-color: #DEF7EC;
-        color: #03543F;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-weight: 600;
-        font-size: 0.85rem;
-        border: 1px solid #31C48D;
-    }
-    .badge-fail {
-        background-color: #FDE8E8;
-        color: #9B1C1C;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-weight: 600;
-        font-size: 0.85rem;
-        border: 1px solid #F05252;
-    }
-
-    /* Code-like text for variables */
-    code, .stCodeBlock {
-        font-family: 'Fira Code', monospace !important;
-        background-color: #F8FAFC !important;
-        color: #1E40AF !important;
-        border: 1px solid #DBEAFE;
-    }
-
-    /* Buttons styling */
-    .stButton>button {
-        background-color: #1E40AF;
-        color: white;
-        border-radius: 6px;
-        font-weight: 600;
-        border: none;
-        padding: 0.5rem 1rem;
-        transition: all 0.2s ease;
-    }
-    .stButton>button:hover {
-        background-color: #1E3A8A;
-        box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.2);
     }
 </style>
-
 """, unsafe_allow_html=True)
 
 
@@ -153,7 +77,7 @@ def show_metrics_results(metrics: dict, df: pd.DataFrame, sensitive_col: str, ta
             border-radius: 4px;
         ">
             <h3 style="margin:0; color: {card_color};">
-                {'<span class="badge-pass">✅ PASS</span>' if dpr_result.status == 'PASS' else '<span class="badge-fail">❌ FAIL</span>'}
+                {'✅ PASS' if dpr_result.status == 'PASS' else '❌ FAIL'}
                 - Demographic Parity Ratio
             </h3>
             <p style="font-size: 1.5rem; margin: 0.5rem 0;">
@@ -179,7 +103,7 @@ def show_metrics_results(metrics: dict, df: pd.DataFrame, sensitive_col: str, ta
     st.markdown("#### 📈 Visual Analysis")
     try:
         chart = create_fairness_bar_chart(df, sensitive_col, target_col, metrics)
-        st.plotly_chart(chart, use_container_width=True)
+        st_plotly(chart, use_container_width=True)
         st.session_state.chart = chart
     except Exception as e:
         st.warning(f"Chart temporarily unavailable: {str(e)}")
@@ -187,7 +111,7 @@ def show_metrics_results(metrics: dict, df: pd.DataFrame, sensitive_col: str, ta
     with st.expander("📊 View Summary Charts"):
         try:
             summary_chart = create_summary_metrics_chart(metrics)
-            st.plotly_chart(summary_chart, use_container_width=True)
+            st_plotly(summary_chart, use_container_width=True)
         except Exception as e:
             st.warning(f"Summary chart unavailable: {str(e)}")
 
@@ -262,14 +186,13 @@ def show_comparison_results(
         st.metric("DPR (After)", f"{new_dpr:.1%}", delta=f"{(new_dpr - old_dpr):.1%}")
     with col3:
         new_status = new_metrics['demographic_parity_ratio'].status
-        status_html = '<span class="badge-pass">✅ PASS</span>' if new_status == 'PASS' else '<span class="badge-fail">❌ FAIL</span>'
-        st.markdown(f'**Status:** {status_html}', unsafe_allow_html=True)
+        st.markdown(f"**Status:** {'✅ PASS' if new_status == 'PASS' else '❌ FAIL'}")
     
     try:
         chart = create_comparison_chart(
             df_original, df_mitigated, sensitive_col, target_col
         )
-        st.plotly_chart(chart, use_container_width=True)
+        st_plotly(chart, use_container_width=True)
     except Exception as e:
         st.warning(f"Comparison chart unavailable: {str(e)}")
     
@@ -351,8 +274,8 @@ def show_footer():
 
 
 def main():
-    st.markdown("<div class=\"main-header\">⚖️ AI Fairness Auditing Dashboard</div>", unsafe_allow_html=True)
-    st.markdown("<div class=\"sub-header\">Compliance-Powered Bias Detection & Mitigation</div>", unsafe_allow_html=True)
+    st.title("⚖️ AI Fairness Auditing Dashboard")
+    st.markdown("### Compliance-Powered Bias Detection")
     
     show_sidebar()
     

@@ -5,10 +5,10 @@ from plotly.subplots import make_subplots
 import pandas as pd
 from typing import Dict, List, Optional, Tuple
 
-COLOR_COMPLIANT = "#10B981"
+COLOR_COMPLIANT = "#22C55E"
 COLOR_NON_COMPLIANT = "#EF4444"
-COLOR_THRESHOLD = "#F59E0B"
-COLOR_BG = "#FFFFFF"
+COLOR_THRESHOLD = "#FF6B00"
+COLOR_BG = "#F8FAFC"
 
 FOUR_FIFTHS_THRESHOLD = 0.8
 
@@ -63,7 +63,7 @@ def create_fairness_bar_chart(
     fig.update_layout(
         title={
             'text': f"Fairness Analysis by {sensitive_col}",
-            'font': {'family': 'Inter, sans-serif', 'size': 18, 'color': '#1E3A8A'}
+            'font': {'size': 18, 'color': '#1E3A5F'}
         },
         xaxis_title="Positive Outcome Rate",
         yaxis_title=sensitive_col,
@@ -131,7 +131,7 @@ def create_comparison_chart(
     fig.update_layout(
         title={
             'text': "Before vs After Bias Mitigation",
-            'font': {'family': 'Inter, sans-serif', 'size': 18, 'color': '#1E3A8A'}
+            'font': {'size': 18, 'color': '#1E3A5F'}
         },
         yaxis_tickformat=".0%",
         yaxis_range=[0, 1.15],
@@ -167,7 +167,7 @@ def create_summary_metrics_chart(metrics: Dict) -> go.Figure:
         fig.add_trace(go.Indicator(
             mode="gauge+number",
             value=dpr_value,
-            number={'suffix': "%", 'font': {'family': 'Fira Code, monospace', 'size': 24, 'color': '#0F172A'}},
+            number={'suffix': "%", 'font': {'size': 20}},
             gauge={
                 'axis': {'range': [0, 1], 'tickformat': ".0%"},
                 'bar': {'color': dpr_color},
@@ -181,7 +181,7 @@ def create_summary_metrics_chart(metrics: Dict) -> go.Figure:
                     'value': FOUR_FIFTHS_THRESHOLD
                 }
             },
-            title={'text': "Four-Fifths Rule Ratio", 'font': {'family': 'Inter, sans-serif', 'size': 14, 'color': '#64748B'}}
+            title={'text': "Four-Fifths Rule Ratio", 'font': {'size': 14}}
         ), row=1, col=1)
     
     dpd = metrics.get('demographic_parity_difference')
@@ -192,7 +192,7 @@ def create_summary_metrics_chart(metrics: Dict) -> go.Figure:
         fig.add_trace(go.Indicator(
             mode="gauge+number",
             value=dpd_value,
-            number={'suffix': "%", 'font': {'family': 'Fira Code, monospace', 'size': 24, 'color': '#0F172A'}},
+            number={'suffix': "%", 'font': {'size': 20}},
             gauge={
                 'axis': {'range': [0, 0.5], 'tickformat': ".0%"},
                 'bar': {'color': dpd_color},
@@ -202,7 +202,7 @@ def create_summary_metrics_chart(metrics: Dict) -> go.Figure:
                     {'range': [0.3, 0.5], 'color': f"{COLOR_NON_COMPLIANT}30"}
                 ]
             },
-            title={'text': "Absolute Difference", 'font': {'family': 'Inter, sans-serif', 'size': 14, 'color': '#64748B'}}
+            title={'text': "Absolute Difference", 'font': {'size': 14}}
         ), row=1, col=2)
     
     fig.update_layout(
