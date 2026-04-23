@@ -50,11 +50,11 @@ npm run dev
 ### 🌟 Features
 
 - **Bias Auditing**: Upload your datasets and automatically calculate the Demographic Parity Ratio and Demographic Parity Difference.
-- **Visual Analytics**: Interactive Plotly and Recharts charts comparing protected groups.
+- **Visual Analytics**: Interactive Recharts-based visualizations comparing protected groups.
 - **Automated Mitigation**: Reweight the data to automatically neutralize biased outcomes without throwing away records.
 - **Compliance Reporting**: Instantly export a formatted HTML audit report passing global AI compliance benchmarks.
 
 ### 🛠️ Tech Stack
 
-**Frontend:** React 19, Vite, TailwindCSS, Framer Motion  
-**Backend:** FastAPI, Pandas, Plotly, Scikit-Learn
+**Frontend:** React 19, Vite, TailwindCSS, Framer Motion, Recharts  
+**Backend:** FastAPI, Pandas, Scikit-Learn
