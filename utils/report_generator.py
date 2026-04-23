@@ -221,7 +221,7 @@ class ComplianceReportGenerator:
         <tr><th>Before/After</th><th>DPR</th></tr>
 """
             orig = comparison.get('original', {})
-            mitig = comparison.get('metigated', {})
+            mitig = comparison.get('mitigated', {})
             orig_dpr = orig.get('dpr')
             mitig_dpr = mitig.get('dpr')
             html += f"""

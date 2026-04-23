@@ -10,6 +10,8 @@ ENV/
 *.egg-info/
 dist/
 build/
+.venv/
+.env
 
 # IDEs
 .vscode/
@@ -26,3 +28,9 @@ Thumbs.db
 
 # Data
 *.parquet
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
